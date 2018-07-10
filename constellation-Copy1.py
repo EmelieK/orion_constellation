@@ -106,9 +106,8 @@ plt.show()
 
 
 fig_3d = plt.figure()
-fig_3d.add_subplot(1, 1, 1, projection="3d")
-sz = 2
-constellation3d = plt.scatter(x, y, z, color="purple")
+ax = fig_3d.add_subplot(1, 1, 1, projection="3d")
+constellation3d = ax.scatter(x, y, z, color="purple")
 plt.title("The Orion Constellation in 3D")
 
 plt.show()
